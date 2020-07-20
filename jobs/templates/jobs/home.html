@@ -1,4 +1,4 @@
-
+{% load staticfiles %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.0.1">
-    <title>Album example · Bootstrap</title>
+    <title>Matin NazariBaqa</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
 
@@ -47,15 +47,15 @@
   <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Matin NazariBaqa</a>
+      <a class="navbar-brand" href="{% url 'home' %}">Matin NazariBaqa</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
           <a class="nav-item nav-link" href="#">Twitter</a>
-          <a class="nav-item nav-link" href="#">Resume</a>
-          <a class="nav-item nav-link" href="#">Blog</a>
+          <a class="nav-item nav-link" href="{% static 'Lazat_falsafeh.pdf'%}">Resume</a>
+          <a class="nav-item nav-link" href="{% url 'allblogs' %}">Blog</a>
         </div>
       </div>
     </nav>
@@ -69,6 +69,7 @@
       <p class="lead text-muted">It is an interduction part about the site and myself so remeber to change it<p>
         <a href="mailto:matinnazaribaqa@gmail.com" class="btn btn-primary my-2">Email me!</a>
               </p>
+      <img src="{% static '239996.jpg' %}" height="300" />
     </div>
   </section>
 
